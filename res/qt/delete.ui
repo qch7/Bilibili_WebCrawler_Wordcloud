@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1042</width>
+    <height>709</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>分词结果过滤</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QCheckBox" name="choose_all_checkBox">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>370</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>全选词性</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>460</y>
+      <width>141</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>删除</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>20</y>
+      <width>101</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QCheckBox" name="n_checkBox">
+       <property name="text">
+        <string>n 名词</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="d_checkBox">
+       <property name="text">
+        <string>d 副词</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="a_checkBox">
+       <property name="text">
+        <string>a 形容词</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="v_checkBox">
+       <property name="text">
+        <string>v 动词</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="i_checkBox">
+       <property name="text">
+        <string>i 成语</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="x_checkBox">
+       <property name="text">
+        <string>x 非语素字</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="c_checkBox">
+       <property name="text">
+        <string>c 连词</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="m_checkBox">
+       <property name="text">
+        <string>m 数词</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="un_checkBox">
+       <property name="text">
+        <string>un 未知词</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="z_checkBox">
+       <property name="text">
+        <string>z 状态词</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="eng_checkBox">
+       <property name="text">
+        <string>eng 英语</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>20</y>
+      <width>101</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QCheckBox" name="nr_checkBox">
+       <property name="text">
+        <string>nr 人名</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="ns_checkBox">
+       <property name="text">
+        <string>ns 地名</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="nt_checkBox">
+       <property name="text">
+        <string>nt 机构团体</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="nz_checkBox">
+       <property name="text">
+        <string>nz 其他专名</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="vd_checkBox">
+       <property name="text">
+        <string>vd 副动词</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="vn_checkBox">
+       <property name="text">
+        <string>vn 名动词</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="ad_checkBox">
+       <property name="text">
+        <string>ad 副形词</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="an_checkBox">
+       <property name="text">
+        <string>an 名形词</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="t_checkBox">
+       <property name="text">
+        <string>t 时间词</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="r_checkBox">
+       <property name="text">
+        <string>r 代词</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="f_checkBox">
+       <property name="text">
+        <string>f 方位词</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>20</y>
+      <width>107</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QCheckBox" name="u_checkBox">
+       <property name="text">
+        <string>u 助词</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="b_checkBox">
+       <property name="text">
+        <string>b 区别词</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="e_checkBox">
+       <property name="text">
+        <string>e 叹词</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="p_checkBox">
+       <property name="text">
+        <string>p 介词</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="q_checkBox">
+       <property name="text">
+        <string>q 量词</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="o_checkBox">
+       <property name="text">
+        <string>o 拟声词</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="s_checkBox">
+       <property name="text">
+        <string>s 处所词</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="l_checkBox">
+       <property name="text">
+        <string>l 习用语</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="j_checkBox">
+       <property name="text">
+        <string>j 	简称略语</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="others_checkBox">
+       <property name="text">
+        <string>其他词性</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QCheckBox" name="word_frequency_checkBox">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>70</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>词频过滤</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="word_frequency_lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>40</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>词频过滤默认为&lt;=2</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>421</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>勾选</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>词性</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>词</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>词频</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="selected_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>220</y>
+      <width>131</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>19</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>确认选中</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pic">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>290</y>
+      <width>151</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>img/pic.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="head_lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>110</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>保留前(默认100)个</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="head_checkBox">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>150</y>
+      <width>78</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>保留过滤</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="choose_all_table_checkBox">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>370</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>全选表格</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1042</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>设置</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
